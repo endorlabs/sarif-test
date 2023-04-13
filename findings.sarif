@@ -9,36 +9,9 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "customer/pom.xml"
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Repository jersey is archived for dependency org.glassfish.jersey.connectors:jersey-apache-connector@3.1.1. \norg.glassfish.jersey.connectors:jersey-apache-connector@3.1.1 is a direct dependency of endor.ai:customer@1.0-SNAPSHOT."
-          },
-          "ruleId": "archived_source_code_repo"
-        },
-        {
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "customer/pom.xml"
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Repository jersey is archived for dependency org.glassfish.jersey.core:jersey-client@3.1.1. \norg.glassfish.jersey.core:jersey-client@3.1.1 is a transitive dependency of endor.ai:customer@1.0-SNAPSHOT via external direct dependency org.glassfish.jersey.connectors:jersey-apache-connector@3.1.1."
-          },
-          "ruleId": "archived_source_code_repo"
-        },
-        {
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "customer/pom.xml"
+                },
+                "region": {
+                  "startLine": 1
                 }
               }
             }
@@ -54,21 +27,9 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "customer/pom.xml"
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "License risk for dependency org.apache.felix:org.apache.felix.framework@7.0.5: Repository does not appear to have a valid license. \norg.apache.felix:org.apache.felix.framework@7.0.5 is a direct dependency of endor.ai:customer@1.0-SNAPSHOT."
-          },
-          "ruleId": "bad_license"
-        },
-        {
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "customer/pom.xml"
+                },
+                "region": {
+                  "startLine": 2
                 }
               }
             }
@@ -83,15 +44,54 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "payments/pom.xml"
+                  "uri": "customer/pom.xml"
+                },
+                "region": {
+                  "startLine": 3
                 }
               }
             }
           ],
           "message": {
-            "text": "io.netty:netty-common@5.0.0.Alpha2 has a medium severity vulnerability identified by GHSA-5mcr-gq6c-3hq2: Local Information Disclosure Vulnerability in Netty on Unix-Like systems. There is no known fix for this vulnerability at this time. \nio.netty:netty-common@5.0.0.Alpha2 is a transitive dependency of endor.ai:payments@1.0-SNAPSHOT via external direct dependency io.netty:netty-buffer@5.0.0.Alpha2."
+            "text": "Repository jersey is archived for dependency org.glassfish.jersey.connectors:jersey-apache-connector@3.1.1. \norg.glassfish.jersey.connectors:jersey-apache-connector@3.1.1 is a direct dependency of endor.ai:customer@1.0-SNAPSHOT."
           },
-          "ruleId": "dependency_with_medium_severity_vulnerabilities"
+          "ruleId": "archived_source_code_repo"
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "customer/pom.xml"
+                },
+                "region": {
+                  "startLine": 4
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Repository jersey is archived for dependency org.glassfish.jersey.core:jersey-client@3.1.1. \norg.glassfish.jersey.core:jersey-client@3.1.1 is a transitive dependency of endor.ai:customer@1.0-SNAPSHOT via external direct dependency org.glassfish.jersey.connectors:jersey-apache-connector@3.1.1."
+          },
+          "ruleId": "archived_source_code_repo"
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "customer/pom.xml"
+                },
+                "region": {
+                  "startLine": 5
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "License risk for dependency org.apache.felix:org.apache.felix.framework@7.0.5: Repository does not appear to have a valid license. \norg.apache.felix:org.apache.felix.framework@7.0.5 is a direct dependency of endor.ai:customer@1.0-SNAPSHOT."
+          },
+          "ruleId": "bad_license"
         },
         {
           "locations": [
@@ -99,6 +99,9 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "payments/pom.xml"
+                },
+                "region": {
+                  "startLine": 6
                 }
               }
             }
@@ -114,14 +117,17 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "payments/pom.xml"
+                },
+                "region": {
+                  "startLine": 7
                 }
               }
             }
           ],
           "message": {
-            "text": "License risk for dependency com.google.errorprone:error_prone_annotations@2.18.0: Repository does not appear to have a valid license. \ncom.google.errorprone:error_prone_annotations@2.18.0 is a transitive dependency of endor.ai:payments@1.0-SNAPSHOT via external direct dependency io.grpc:grpc-netty@1.54.0."
+            "text": "io.netty:netty-common@5.0.0.Alpha2 has a medium severity vulnerability identified by GHSA-5mcr-gq6c-3hq2: Local Information Disclosure Vulnerability in Netty on Unix-Like systems. There is no known fix for this vulnerability at this time. \nio.netty:netty-common@5.0.0.Alpha2 is a transitive dependency of endor.ai:payments@1.0-SNAPSHOT via external direct dependency io.netty:netty-buffer@5.0.0.Alpha2."
           },
-          "ruleId": "bad_license"
+          "ruleId": "dependency_with_medium_severity_vulnerabilities"
         },
         {
           "locations": [
@@ -129,6 +135,9 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "payments/pom.xml"
+                },
+                "region": {
+                  "startLine": 8
                 }
               }
             }
@@ -144,12 +153,15 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "payments/pom.xml"
+                },
+                "region": {
+                  "startLine": 9
                 }
               }
             }
           ],
           "message": {
-            "text": "License risk for dependency io.netty:netty-common@5.0.0.Alpha2: Repository does not appear to have a valid license. \nio.netty:netty-common@5.0.0.Alpha2 is a transitive dependency of endor.ai:payments@1.0-SNAPSHOT via external direct dependency io.netty:netty-buffer@5.0.0.Alpha2."
+            "text": "License risk for dependency com.google.guava:guava@31.1-android: Repository does not appear to have a valid license. \ncom.google.guava:guava@31.1-android is a transitive dependency of endor.ai:payments@1.0-SNAPSHOT via external direct dependency io.grpc:grpc-netty@1.54.0."
           },
           "ruleId": "bad_license"
         },
@@ -159,6 +171,27 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "payments/pom.xml"
+                },
+                "region": {
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "License risk for dependency com.google.errorprone:error_prone_annotations@2.18.0: Repository does not appear to have a valid license. \ncom.google.errorprone:error_prone_annotations@2.18.0 is a transitive dependency of endor.ai:payments@1.0-SNAPSHOT via external direct dependency io.grpc:grpc-netty@1.54.0."
+          },
+          "ruleId": "bad_license"
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "payments/pom.xml"
+                },
+                "region": {
+                  "startLine": 11
                 }
               }
             }
@@ -174,12 +207,15 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "payments/pom.xml"
+                },
+                "region": {
+                  "startLine": 12
                 }
               }
             }
           ],
           "message": {
-            "text": "License risk for dependency io.netty:netty-buffer@5.0.0.Alpha2: Repository does not appear to have a valid license. \nio.netty:netty-buffer@5.0.0.Alpha2 is a direct dependency of endor.ai:payments@1.0-SNAPSHOT."
+            "text": "License risk for dependency io.netty:netty-common@5.0.0.Alpha2: Repository does not appear to have a valid license. \nio.netty:netty-common@5.0.0.Alpha2 is a transitive dependency of endor.ai:payments@1.0-SNAPSHOT via external direct dependency io.netty:netty-buffer@5.0.0.Alpha2."
           },
           "ruleId": "bad_license"
         },
@@ -189,12 +225,15 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "payments/pom.xml"
+                },
+                "region": {
+                  "startLine": 13
                 }
               }
             }
           ],
           "message": {
-            "text": "License risk for dependency com.google.guava:guava@31.1-android: Repository does not appear to have a valid license. \ncom.google.guava:guava@31.1-android is a transitive dependency of endor.ai:payments@1.0-SNAPSHOT via external direct dependency io.grpc:grpc-netty@1.54.0."
+            "text": "License risk for dependency io.netty:netty-buffer@5.0.0.Alpha2: Repository does not appear to have a valid license. \nio.netty:netty-buffer@5.0.0.Alpha2 is a direct dependency of endor.ai:payments@1.0-SNAPSHOT."
           },
           "ruleId": "bad_license"
         }
@@ -203,46 +242,6 @@
         "driver": {
           "name": "endorctl",
           "rules": [
-            {
-              "fullDescription": {
-                "text": "org.checkerframework:checker-qual@checker-framework-3.12.0 is 24 months old and 22 releases behind the latest release checker-framework-3.28.0. \norg.checkerframework:checker-qual@3.12.0 is a transitive dependency of endor.ai:payments@1.0-SNAPSHOT via external direct dependency io.grpc:grpc-netty@1.54.0. org.checkerframework:checker-qual@3.12.0 is a transitive dependency of io.grpc:grpc-netty@1.54.0."
-              },
-              "help": {
-                "text": "No direct dependency upgrade(s) exist to fix this issue."
-              },
-              "id": "outdated_release",
-              "name": "outdated_release",
-              "properties": {
-                "tags": [
-                  "TRANSITIVE",
-                  "POTENTIALLY_REACHABLE_DEPENDENCY",
-                  "NORMAL"
-                ]
-              },
-              "shortDescription": {
-                "text": "Outdated Dependency org.checkerframework:checker-qual@3.12.0"
-              }
-            },
-            {
-              "fullDescription": {
-                "text": "Repository jersey is archived for dependency org.glassfish.jersey.connectors:jersey-apache-connector@3.1.1. \norg.glassfish.jersey.connectors:jersey-apache-connector@3.1.1 is a direct dependency of endor.ai:customer@1.0-SNAPSHOT."
-              },
-              "help": {
-                "text": "Assess the feasibility of migrating to a maintained software package or self-maintenance with the understanding that this software will no longer make updates available."
-              },
-              "id": "archived_source_code_repo",
-              "name": "archived_source_code_repo",
-              "properties": {
-                "tags": [
-                  "DIRECT",
-                  "POTENTIALLY_REACHABLE_DEPENDENCY",
-                  "NORMAL"
-                ]
-              },
-              "shortDescription": {
-                "text": "Unmaintained Dependency org.glassfish.jersey.connectors:jersey-apache-connector@3.1.1"
-              }
-            },
             {
               "fullDescription": {
                 "text": "License risk for dependency com.google.code.gson:gson@2.10: Repository does not appear to have a valid license. \ncom.google.code.gson:gson@2.10 is a transitive dependency of endor.ai:customer@1.0-SNAPSHOT via external direct dependency org.apache.jena:apache-jena-libs@4.7.0. com.google.code.gson:gson@2.10 is a transitive dependency of org.apache.jena:apache-jena-libs@4.7.0."
@@ -265,7 +264,27 @@
             },
             {
               "fullDescription": {
-                "text": "io.netty:netty-common@5.0.0.Alpha2 has a medium severity vulnerability identified by GHSA-5mcr-gq6c-3hq2: Local Information Disclosure Vulnerability in Netty on Unix-Like systems. There is no known fix for this vulnerability at this time. \nio.netty:netty-common@5.0.0.Alpha2 is a transitive dependency of endor.ai:payments@1.0-SNAPSHOT via external direct dependency io.netty:netty-buffer@5.0.0.Alpha2."
+                "text": "Repository jersey is archived for dependency org.glassfish.jersey.core:jersey-common@3.1.1. \norg.glassfish.jersey.core:jersey-common@3.1.1 is a transitive dependency of endor.ai:customer@1.0-SNAPSHOT via external direct dependency org.glassfish.jersey.connectors:jersey-apache-connector@3.1.1."
+              },
+              "help": {
+                "text": "Assess the feasibility of migrating to a maintained software package or self-maintenance with the understanding that this software will no longer make updates available."
+              },
+              "id": "archived_source_code_repo",
+              "name": "archived_source_code_repo",
+              "properties": {
+                "tags": [
+                  "TRANSITIVE",
+                  "POTENTIALLY_REACHABLE_DEPENDENCY",
+                  "NORMAL"
+                ]
+              },
+              "shortDescription": {
+                "text": "Unmaintained Dependency org.glassfish.jersey.core:jersey-common@3.1.1"
+              }
+            },
+            {
+              "fullDescription": {
+                "text": "io.netty:netty-common@5.0.0.Alpha2 has a medium severity vulnerability identified by GHSA-269q-hmxg-m83q: Local Information Disclosure Vulnerability in io.netty:netty-codec-http. There is no known fix for this vulnerability at this time. \nio.netty:netty-common@5.0.0.Alpha2 is a transitive dependency of endor.ai:payments@1.0-SNAPSHOT via external direct dependency io.netty:netty-buffer@5.0.0.Alpha2."
               },
               "help": {
                 "text": "No patch upgrades available to fix the issue. Check the security advisory for alternative controls or actions."
@@ -282,7 +301,27 @@
                 ]
               },
               "shortDescription": {
-                "text": "Dependency io.netty:netty-common@5.0.0.Alpha2 With Medium Severity Vulnerability Local Information Disclosure Vulnerability in Netty on Unix-Like systems"
+                "text": "Dependency io.netty:netty-common@5.0.0.Alpha2 With Medium Severity Vulnerability Local Information Disclosure Vulnerability in io.netty:netty-codec-http"
+              }
+            },
+            {
+              "fullDescription": {
+                "text": "org.checkerframework:checker-qual@checker-framework-3.12.0 is 24 months old and 22 releases behind the latest release checker-framework-3.28.0. \norg.checkerframework:checker-qual@3.12.0 is a transitive dependency of endor.ai:payments@1.0-SNAPSHOT via external direct dependency io.grpc:grpc-netty@1.54.0. org.checkerframework:checker-qual@3.12.0 is a transitive dependency of io.grpc:grpc-netty@1.54.0."
+              },
+              "help": {
+                "text": "No direct dependency upgrade(s) exist to fix this issue."
+              },
+              "id": "outdated_release",
+              "name": "outdated_release",
+              "properties": {
+                "tags": [
+                  "TRANSITIVE",
+                  "POTENTIALLY_REACHABLE_DEPENDENCY",
+                  "NORMAL"
+                ]
+              },
+              "shortDescription": {
+                "text": "Outdated Dependency org.checkerframework:checker-qual@3.12.0"
               }
             }
           ],
