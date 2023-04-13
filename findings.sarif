@@ -205,48 +205,6 @@
           "rules": [
             {
               "fullDescription": {
-                "text": "License risk for dependency com.google.code.gson:gson@2.10: Repository does not appear to have a valid license. \ncom.google.code.gson:gson@2.10 is a transitive dependency of endor.ai:customer@1.0-SNAPSHOT via external direct dependency org.apache.jena:apache-jena-libs@4.7.0. com.google.code.gson:gson@2.10 is a transitive dependency of org.apache.jena:apache-jena-libs@4.7.0."
-              },
-              "help": {
-                "text": "Review details to decide what to do next."
-              },
-              "id": "bad_license",
-              "name": "bad_license",
-              "properties": {
-                "tags": [
-                  "FINDING_TAGS_TRANSITIVE",
-                  "FINDING_TAGS_POTENTIALLY_REACHABLE_DEPENDENCY",
-                  "FINDING_TAGS_NORMAL"
-                ]
-              },
-              "shortDescription": {
-                "text": "License Risk in Dependency com.google.code.gson:gson@2.10"
-              }
-            },
-            {
-              "fullDescription": {
-                "text": "io.netty:netty-common@5.0.0.Alpha2 has a medium severity vulnerability identified by GHSA-5mcr-gq6c-3hq2: Local Information Disclosure Vulnerability in Netty on Unix-Like systems. There is no known fix for this vulnerability at this time. \nio.netty:netty-common@5.0.0.Alpha2 is a transitive dependency of endor.ai:payments@1.0-SNAPSHOT via external direct dependency io.netty:netty-buffer@5.0.0.Alpha2."
-              },
-              "help": {
-                "text": "No patch upgrades available to fix the issue. Check the security advisory for alternative controls or actions."
-              },
-              "id": "dependency_with_medium_severity_vulnerabilities",
-              "name": "dependency_with_medium_severity_vulnerabilities",
-              "properties": {
-                "tags": [
-                  "FINDING_TAGS_TRANSITIVE",
-                  "FINDING_TAGS_POTENTIALLY_REACHABLE_FUNCTION",
-                  "FINDING_TAGS_POTENTIALLY_REACHABLE_DEPENDENCY",
-                  "FINDING_TAGS_NORMAL",
-                  "FINDING_TAGS_UNFIXABLE"
-                ]
-              },
-              "shortDescription": {
-                "text": "Dependency io.netty:netty-common@5.0.0.Alpha2 With Medium Severity Vulnerability Local Information Disclosure Vulnerability in Netty on Unix-Like systems"
-              }
-            },
-            {
-              "fullDescription": {
                 "text": "org.checkerframework:checker-qual@checker-framework-3.12.0 is 24 months old and 22 releases behind the latest release checker-framework-3.28.0. \norg.checkerframework:checker-qual@3.12.0 is a transitive dependency of endor.ai:payments@1.0-SNAPSHOT via external direct dependency io.grpc:grpc-netty@1.54.0. org.checkerframework:checker-qual@3.12.0 is a transitive dependency of io.grpc:grpc-netty@1.54.0."
               },
               "help": {
@@ -256,9 +214,9 @@
               "name": "outdated_release",
               "properties": {
                 "tags": [
-                  "FINDING_TAGS_TRANSITIVE",
-                  "FINDING_TAGS_POTENTIALLY_REACHABLE_DEPENDENCY",
-                  "FINDING_TAGS_NORMAL"
+                  "TRANSITIVE",
+                  "POTENTIALLY_REACHABLE_DEPENDENCY",
+                  "NORMAL"
                 ]
               },
               "shortDescription": {
@@ -276,13 +234,55 @@
               "name": "archived_source_code_repo",
               "properties": {
                 "tags": [
-                  "FINDING_TAGS_DIRECT",
-                  "FINDING_TAGS_POTENTIALLY_REACHABLE_DEPENDENCY",
-                  "FINDING_TAGS_NORMAL"
+                  "DIRECT",
+                  "POTENTIALLY_REACHABLE_DEPENDENCY",
+                  "NORMAL"
                 ]
               },
               "shortDescription": {
                 "text": "Unmaintained Dependency org.glassfish.jersey.connectors:jersey-apache-connector@3.1.1"
+              }
+            },
+            {
+              "fullDescription": {
+                "text": "License risk for dependency com.google.code.gson:gson@2.10: Repository does not appear to have a valid license. \ncom.google.code.gson:gson@2.10 is a transitive dependency of endor.ai:customer@1.0-SNAPSHOT via external direct dependency org.apache.jena:apache-jena-libs@4.7.0. com.google.code.gson:gson@2.10 is a transitive dependency of org.apache.jena:apache-jena-libs@4.7.0."
+              },
+              "help": {
+                "text": "Review details to decide what to do next."
+              },
+              "id": "bad_license",
+              "name": "bad_license",
+              "properties": {
+                "tags": [
+                  "TRANSITIVE",
+                  "POTENTIALLY_REACHABLE_DEPENDENCY",
+                  "NORMAL"
+                ]
+              },
+              "shortDescription": {
+                "text": "License Risk in Dependency com.google.code.gson:gson@2.10"
+              }
+            },
+            {
+              "fullDescription": {
+                "text": "io.netty:netty-common@5.0.0.Alpha2 has a medium severity vulnerability identified by GHSA-5mcr-gq6c-3hq2: Local Information Disclosure Vulnerability in Netty on Unix-Like systems. There is no known fix for this vulnerability at this time. \nio.netty:netty-common@5.0.0.Alpha2 is a transitive dependency of endor.ai:payments@1.0-SNAPSHOT via external direct dependency io.netty:netty-buffer@5.0.0.Alpha2."
+              },
+              "help": {
+                "text": "No patch upgrades available to fix the issue. Check the security advisory for alternative controls or actions."
+              },
+              "id": "dependency_with_medium_severity_vulnerabilities",
+              "name": "dependency_with_medium_severity_vulnerabilities",
+              "properties": {
+                "tags": [
+                  "TRANSITIVE",
+                  "POTENTIALLY_REACHABLE_FUNCTION",
+                  "POTENTIALLY_REACHABLE_DEPENDENCY",
+                  "NORMAL",
+                  "UNFIXABLE"
+                ]
+              },
+              "shortDescription": {
+                "text": "Dependency io.netty:netty-common@5.0.0.Alpha2 With Medium Severity Vulnerability Local Information Disclosure Vulnerability in Netty on Unix-Like systems"
               }
             }
           ],
